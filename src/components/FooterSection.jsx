@@ -1,7 +1,52 @@
-import React from 'react';
-import logo from '../assets/White Logo.png';
+import React from "react";
+import logo from "../assets/White Logo.png";
 
 const FooterSection = () => {
+  const OurServices = [
+    {
+      id: "service-01",
+      name: "Social Media Marketing",
+    },
+    {
+      id: "service-02",
+      name: "Web & Mobile App Development",
+    },
+    {
+      id: "service-03",
+      name: "Data & Analytics",
+    },
+    {
+      id: "service-04",
+      name: "Google Marketing Solutions",
+    },
+    {
+      id: "service-05",
+      name: "Search Engine Optimization",
+    },
+  ];
+
+  const OurTechnologies =[
+    {
+      id: "tech-01",
+      name: "ReactJS",
+    },
+    {
+      id: "tech-02",
+      name: "NodeJS",
+    },
+    {
+      id: "tech-03",
+      name: "Next.js",
+    },
+    {
+      id: "tech-04",
+      name: "GraphQL",
+    },
+    {
+      id: "tech-05",
+      name: "Laravel",
+    },
+  ]
   return (
     <footer className="bg-violet-700 text-white p-12">
       <div className="md:flex md:justify-between md:items-center">
@@ -19,21 +64,17 @@ const FooterSection = () => {
           <div>
             <h3 className="text-lg font-medium">Our Technologies</h3>
             <ul className="mt-2">
-              <li>ReactJS</li>
-              <li>NodeJS</li>
-              <li>Next.js</li>
-              <li>GraphQL</li>
-              <li>Laravel</li>
+              {OurTechnologies.map((tech)=>(
+                <li key={tech.id} className="mb-3">{tech.name}</li>
+              ))}
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-medium">Our Services</h3>
             <ul className="mt-2">
-              <li>Social Media Marketing</li>
-              <li>Web & Mobile App Development</li>
-              <li>Data & Analytics</li>
-              <li>Google Marketing Solutions</li>
-              <li>Search Engine Optimization</li>
+              {OurServices.map((service) => (
+                <li key={service.id} className="mb-3">{service.name}</li>
+              ))}
             </ul>
           </div>
         </div>

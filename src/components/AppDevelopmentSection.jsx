@@ -6,7 +6,7 @@ const AppDevelopmentSection = () => {
     <div className="flex flex-col md:flex-row p-12">
       <img
         src={computer_image}
-        alt="Magnifying glass with check mark"
+        alt="Computer_image"
         className="w-full h-auto max-w-md lg:ml-40 mx-auto md:w-1/2 mb-6 md:mb-0"
       />
       <div className="flex flex-col items-center justify-center">
