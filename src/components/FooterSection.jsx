@@ -25,7 +25,7 @@ const FooterSection = () => {
     },
   ];
 
-  const OurTechnologies =[
+  const OurTechnologies = [
     {
       id: "tech-01",
       name: "ReactJS",
@@ -46,7 +46,7 @@ const FooterSection = () => {
       id: "tech-05",
       name: "Laravel",
     },
-  ]
+  ];
   return (
     <footer className="bg-violet-700 text-white p-12">
       <div className="md:flex md:justify-between md:items-center">
@@ -64,8 +64,10 @@ const FooterSection = () => {
           <div>
             <h3 className="text-lg font-medium">Our Technologies</h3>
             <ul className="mt-2">
-              {OurTechnologies.map((tech)=>(
-                <li key={tech.id} className="mb-3">{tech.name}</li>
+              {OurTechnologies.map((tech) => (
+                <li key={tech.id} className="mb-3">
+                  {tech.name}
+                </li>
               ))}
             </ul>
           </div>
@@ -73,7 +75,9 @@ const FooterSection = () => {
             <h3 className="text-lg font-medium">Our Services</h3>
             <ul className="mt-2">
               {OurServices.map((service) => (
-                <li key={service.id} className="mb-3">{service.name}</li>
+                <li key={service.id} className="mb-3">
+                  {service.name}
+                </li>
               ))}
             </ul>
           </div>
